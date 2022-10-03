@@ -1,75 +1,76 @@
-body{
-    height: 350px;
-    width: 300px;
-    font-family: 'Fira Sans', sans-serif;
-    background-color: black;
-    color: white;
+body {
+  height: 350px;
+  width: 300px;
+  font-family: "Fira Sans", sans-serif;
+  background-color: black;
+  color: white;
 }
 
-#flexBox{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+#flexBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-#inputB{
-    border-radius:4px ;
-    height: 30px;
-    width: 180px;
-    padding: 3px;
-    padding-left: 10px;
-    margin-top:30px ;
-    outline: none;
+#inputB {
+  border-radius: 4px;
+  height: 30px;
+  width: 180px;
+  padding: 3px;
+  padding-left: 10px;
+  margin-top: 30px;
+  outline: none;
 }
 
-#inputB:focus,#inputB:hover{
-    border: 3px solid #38b6ff;
-    cursor: pointer;
+#inputB:focus,
+#inputB:hover {
+  border: 3px solid #38b6ff;
+  cursor: pointer;
 }
 
-#imgLogo{
-    height: 80px;
-    width: 80px;
-    margin-bottom: 0px;
+#imgLogo {
+  height: 80px;
+  width: 80px;
+  margin-bottom: 0px;
 }
 
-#head{
-    font-size: 30px;
-    margin-top: 0;
+#head {
+  font-size: 30px;
+  margin-top: 0;
 }
 
-#main{
-    margin-top:20px ;
+#main {
+  margin-top: 20px;
 }
 
-#downloader{
-    text-decoration: none;
+#downloader {
+  text-decoration: none;
 }
 
-.btns{
-    height: 30px;
-    width: 200px;
-    border-radius: 5px;
-    color: white;
-    background-color: #38b6ff;
-    font-size: 15px;
-    margin-top: 15px;
+.btns {
+  height: 30px;
+  width: 200px;
+  border-radius: 5px;
+  color: white;
+  background-color: #38b6ff;
+  font-size: 15px;
+  margin-top: 15px;
 }
 
-.btns:hover{
-    cursor: pointer;
-    border: 2px solid #38b6ff;
-    background-color: #3cb8fa96;
-    font-weight: bold;
+.btns:hover {
+  cursor: pointer;
+  border: 2px solid #38b6ff;
+  background-color: #3cb8fa96;
+  font-weight: bold;
 }
 
-#downloadBtn{
-    display: none;
+#downloadBtn {
+  display: none;
 }
 
-#developer{
-    color: rgb(199, 199, 199);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin-top:20px ;
+#developer {
+  color: rgb(199, 199, 199);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin-top: 20px;
 }
