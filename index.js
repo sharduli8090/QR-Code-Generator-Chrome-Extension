@@ -1,11 +1,22 @@
 document.getElementById("btn").addEventListener("click", generate);
+document.getElementById("cancel").addEventListener("click", cancel);
 
+function cancel() {
+    document.getElementById('cancel').style.display = 'none';
+    document.getElementById('inputB').style.display = 'block';
+    document.getElementById('btn').style.display = 'block';
+    document.getElementById('downloadBtn').href = "";
+    document.getElementById('downloadBtn').style.display = 'none';
+    document.getElementById('main').innerHTML = " ";
+}
 
 function generate() {
     let url = document.getElementById('inputB').value;
     document.getElementById('inputB').value = "";
     document.getElementById('inputB').style.display = 'none';
     document.getElementById('btn').style.display = 'none';
+    document.getElementById('cancel').style.display = 'block';
+
 
     let arr = url.split("");
     for (let i = 0; i < arr.length; i++) {
@@ -35,9 +46,11 @@ function generate() {
             temp = JSON.parse(this.responseText);
             console.log(temp.url);
             let img = document.createElement('img');
+            img.id = 'qrCode';
             img.src = temp.url;
             document.getElementById('main').appendChild(img);
             document.getElementById('downloader').href = temp.url;
+            document.getElementById('qrCode').style.display = 'block';
         }
     });
 
@@ -48,7 +61,7 @@ function generate() {
     xhr.send(data);
 
     setTimeout(function () {
-        document.getElementById('downloadBtn').style.display = 'block';
+        document.getElementById('downloadBtn').style.display = 'flex';
     }, 3000);
 
 }

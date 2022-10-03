@@ -44,8 +44,10 @@ body {
   margin-top: 20px;
 }
 
-#downloader {
+#downloader,a{
   text-decoration: none;
+  cursor: pointer;
+  
 }
 
 .btns {
@@ -67,10 +69,23 @@ body {
 
 #downloadBtn {
   display: none;
+  justify-content: center;
+  align-items: center;
 }
 
 #developer {
   color: rgb(199, 199, 199);
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   margin-top: 20px;
+}
+
+#cancel{
+    display: none;
+    background-color: #38b6ff00;
+    border: none;
+    outline: none;
+}
+#cancel:hover{
+    cursor: pointer;
+    color: red;
 }
